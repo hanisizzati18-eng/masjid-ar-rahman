@@ -146,8 +146,9 @@ header p { margin: 0; color: #cfc6ad; }
 }
 
 .menu-btn {
-  flex: 0 0 auto;
-  width: 190px;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 200px;
   height: 340px;
   border-radius: 18px;
   text-decoration: none;
@@ -177,6 +178,11 @@ header p { margin: 0; color: #cfc6ad; }
 .menu-btn:hover { 
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 700px) {
+  .menu-grid { flex-wrap: wrap; }
+  .menu-btn { flex: 0 0 auto; width: 130px; height: 220px; padding-top: 20px; font-size: 0.9rem; }
 }
 
 .prayer-table {
