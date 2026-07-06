@@ -23,7 +23,7 @@
     <h1>MASJID AR-RAHMAN KG. SG. TAPAH MANJOI</h1>
   </header>
 
-  <main>
+  
     <section class="menu-section">
       <h2>Menu Utama</h2>
       <div class="menu-grid">
@@ -35,6 +35,7 @@
       </div>
 
     </section>
+    </main>
      <section class="announcement-section">
       <h2>Pengumuman</h2>
         <div class="poster-box">
@@ -52,7 +53,7 @@
   </main>
 
   <script>
-    fetch('/photos')
+    fetch('/api/photos')
       .then((res) => res.json())
       .then((photos) => {
         const gallery = document.getElementById('gallery');
@@ -73,4 +74,4 @@
       });
   </script>
 </body>
-</html>
+</html> 
